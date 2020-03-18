@@ -1,6 +1,4 @@
 from django.db import models
-
-
 class ImageDB(models.Model):
     category_options = [('unknown', 'unknown'), ('Animal', 'Animal'), ('Fruit', 'Fruit'), ('Nature', 'Nature'), ('Art', 'Art')]
 

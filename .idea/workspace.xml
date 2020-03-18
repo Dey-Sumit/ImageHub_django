@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69099636-70ee-4ff1-9d79-4c076918629b" name="Default Changelist" comment="" />
+    <list default="true" id="69099636-70ee-4ff1-9d79-4c076918629b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImgHub/classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImgHub/exif_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/model_mobilenet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ImgHub/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ImgHub/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ImgHub/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ImgHub/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +28,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Yj9L0nR2KYDPZCo9nSlnjrsit4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,7 +41,15 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sumax\Desktop\ImageHub\ImageHub\ImgHub" />
+      <recent name="C:\Users\Sumax\Desktop\ImageHub\ImageHub" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,9 +69,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583446828267" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1583759766311">
+    <state x="277" y="54" key="SettingsEditor" timestamp="1584428936910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583759766311" />
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584428936910" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584551236577">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584551236577" />
+    <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1584339484552">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1584339484552" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584428246613">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584428246613" />
   </component>
 </project>
