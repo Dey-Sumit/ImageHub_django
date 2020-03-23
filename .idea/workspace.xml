@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69099636-70ee-4ff1-9d79-4c076918629b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImgHub/classification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImgHub/exif_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/model_mobilenet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ImgHub/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ImgHub/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImgHub/hash_value.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImgHub/migrations/0004_auto_20200323_1317.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImgHub/migrations/0005_auto_20200323_1323.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/Honeycrisp-Apple_0K5fff0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/Honeycrisp-Apple_f8ESUz0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/IMG20190622143902_8VgYKhr.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/exif_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/exif_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ImgHub/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ImgHub/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -69,21 +70,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583446828267" />
-    <state x="277" y="54" key="SettingsEditor" timestamp="1584428936910">
+    <state x="277" y="54" key="SettingsEditor" timestamp="1584983754464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584428936910" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584551236577">
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584983754464" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1584952029321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584551236577" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584952029321" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584975925764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584975925764" />
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1584339484552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1584339484552" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584428246613">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584983770465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584428246613" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584983770465" />
   </component>
 </project>

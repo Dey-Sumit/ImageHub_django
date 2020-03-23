@@ -15,11 +15,8 @@ import os
 
 class Classification():
     def __init__(self, image):
-        self.image = image.replace('/', '\\')
-        ROOT_DIR_1 = os.path.dirname(os.path.abspath(__file__))
-        self.img = os.path.dirname(ROOT_DIR_1) + self.image
-
-        #self.img = self.get_image_path(image)
+        self.img = image
+        print("from classification.py")
 
     def predict(self):
         K.reset_uids()
@@ -42,11 +39,6 @@ class Classification():
         # #     return "{}.-  {}: {:.2f}%".format(i + 1, pred, prob * 100)
         # print("Prediction---->")
         # print(self.predict())
-
-    def get_image_path(image_path):
-        image = image_path.replace('/', '\\')
-        ROOT_DIR_1 = os.path.dirname(os.path.abspath(__file__))
-        return os.path.dirname(ROOT_DIR_1) + image
 
     def save(self, *args, **kwargs):
         self.prediction = self.predict()
