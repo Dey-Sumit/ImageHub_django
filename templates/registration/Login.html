@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href=" {% static 'registration/css/style.css' %} ">
+
+</head>
+<body>
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <h2 class="ui blue image header">
+            <img src="https://cdn2.f-cdn.com/contestentries/1492740/33695817/5cc13e9477f89_thumb900.jpg" class="image">
+            <div class="content">
+                Log-in to your account
+            </div>
+        </h2>
+
+        <form action="{% url 'login' %}" method="post" class="ui large form">
+            {% csrf_token %}
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                {{ message }}
+                </li>
+
+                {% endfor %}
+
+            </ul>
+            {% endif %}
+            <!--          {{ form.as_p }}-->
+            <div class="ui stacked segment">
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i>
+                        <input type="text" name="username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui toggle checkbox">
+                        <input type="checkbox" class="hidden">
+                        <label>Remember Me</label>
+                    </div>
+                </div>
+                <button class="ui fluid large blue submit button">Login</button>
+                <!--            {% for message in messages %}-->
+
+                <!--                    <div class="alert alert-success">-->
+                <!--                        <a class="close" href="#" data-dismiss="alert">×</a>-->
+
+                <!--                        {{ message }}-->
+
+                <!--                    </div>-->
+                <!--        {% endfor %}-->
+            </div>
+            -->
+
+            <div class="ui error message"></div>
+
+        </form>
+
+        <div class="ui message">
+            New to us?&nbsp;&nbsp;
+            <a href="{% url 'signup' %}"><button class="ui mini teal button" onclick="openSignUp()">Sign Up</button>
+            </a>
+        </div>
+    </div>
+</div>
+<!--<div class="ui tiny modal" id="signup-modal">-->
+<!--    <div class="header">-->
+<!--        <div class="ui center aligned container">Register Here-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="content">-->
+<!--        &lt;!&ndash; Loading Animation &ndash;&gt;-->
+<!--        <div class="ui inverted dimmer">-->
+<!--            <div class="ui text loader">Signing Up...</div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; ./Loading Animation &ndash;&gt;-->
+<!--        &lt;!&ndash; ./SignIn & SignUp Tab &ndash;&gt;-->
+<!--        &lt;!&ndash; SignIn With Email & Password Form &ndash;&gt;-->
+<!--        <form class="ui form" method="post" action="{% url 'signup' %}">-->
+<!--            {% csrf_token %}-->
+<!--            {{ form.as_p }}-->
+<!--&lt;!&ndash;            <div class="fields">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="field">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label>Username</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" placeholder="Username" name="username" value="Sumax">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="field">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label>Password</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="password" name="password"  value="sumax333">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="field">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label>Confirm Password</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="password" name="password1" value="sumax333">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="field">&ndash;&gt;-->
+<!--&lt;!&ndash;                <label>E-mail ID</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input type="email" placeholder="Email" name="email" value="sumax333@gmail.com">&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="equal width fields">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="field">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label>First name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" placeholder="First Name" name="firstName" value="Sumit" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="field">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label>Last name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" placeholder="Last Name" name="lastName" value="Dey" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="field">&ndash;&gt;-->
+<!--&lt;!&ndash;                <label>Gender</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="ui selection dropdown">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="hidden" name="gender" value="Male">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="dropdown icon"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="default text">Gender</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="menu">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="item" data-value="Male">Male</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="item" data-value="Female">Female</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="field">&ndash;&gt;-->
+<!--&lt;!&ndash;                <label>Mobile Number</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input type="number" name="mobile" minlength="10" maxlength="10" value="8514961767" placeholder="Mobile Number">&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--            <button class="ui basic blue submit button fluid">Submit</button>-->
+<!--            <div class="ui error message"></div>-->
+<!--        </form>-->
+<!--        &lt;!&ndash; ./SignIn With Email & Password Form &ndash;&gt;-->
+<!--        <div class="ui horizontal divider">Social Signup</div>-->
+<!--        &lt;!&ndash; Social Login Button &ndash;&gt;-->
+<!--        <div class="ui two column center aligned grid">-->
+<!--            <div class="row">-->
+<!--                <div class="column">-->
+<!--                    <button class="ui facebook button">-->
+<!--                        <i class="facebook icon"></i>-->
+<!--                        Facebook-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="column">-->
+<!--                    <button class="ui google plus button">-->
+<!--                        <i class="google icon"></i>-->
+<!--                        Google-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; ./Social Login Button &ndash;&gt;-->
+<!--    </div>-->
+
+<!--</div>-->
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script type="text/javascript" src=" {% static 'registration/js/LoginSignupScript.js' %}"></script>
+</body>
+</html>

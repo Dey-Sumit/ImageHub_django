@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="{%  static 'profile_page/profileStyle.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<body>
+<div class="ui grid centered">
+    <div class="fluid sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+        <div class="ui segment fluid">
+            <div class="ui equal width center aligned">
+                <div class="row" style="background-color: #FBFFFE;color: #FFFFF">
+                    <div class="column">
+                        <div class="ui column grid stackable">
+                            <div class="four wide computer sixteen wide tablet sixteen wide mobile column">
+                                <img class="ui small circular image centered"
+                                     src="https://semantic-ui.com/images/avatar2/large/matthew.png">
+                            </div>
+                            <div class="eight wide column center aligned">
+                                <p></p>
+                                <p class="ui huge header" style="font-weight: 'bold';">
+                                    {% if user.is_authenticated  %}
+                                {{  user.username }}
+                                {% else %}
+                                {{ 'please login' }}
+                                {% endif %}</p>
+                                <br>
+                                <button class="ui blue button">
+                                    <i class="edit icon"></i>
+                                    Edit Profile
+                                </button>
+                                <a href="{% url 'logout' %}">
+                                <button class="ui teal button">
+                                    LOG OUT
+                                </button>
+                                </a>
+                                <div id="drop" class="ui icon left pointing dropdown button">
+                                    <i class="wrench icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Change Username</div>
+                                        <div class="item">Change Password</div>
+                                        <div class="ui divider"></div>
+                                        <div class="item">Settings</div>
+                                        <div class="item">Log Out</div>
+                                        <div class="ui divider"></div>
+                                        <div class="item">Help</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="four wide column">
+                                <table class="ui large table">
+                                    <tbody>
+
+                                    <tr>
+                                        <td class="center aligned" data-label="Name"><h3>Posts</h3></td>
+                                        <td class="center aligned" data-label="Age"><h4>52</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center aligned" data-label="Name"><h3>Followers</h3></td>
+                                        <td class="center aligned" data-label="Age"><h4>126</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center aligned" data-label="Name"><h3>Following</h3></td>
+                                        <td class="center aligned" data-label="Age"><h4>512</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center aligned" data-label="Name"><h3>Points</h3></td>
+                                        <td class="center aligned" data-label="Age"><h4>35.69</h4></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui fluid">
+            <div class="ui equal width center aligned">
+                <div class="row" style="background-color: #FBFFFE;color: #FFFFFF;">
+                    <div class="column">
+                        <div class="ui three inverted large item menu">
+                            <a class="item">PicPoint</a>
+                            <a class="item">Community Point</a>
+                            <a class="item">Vote Point</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="ui two item pointing menu top attached" id="post-list">
+        <a class="active item" data-tab="first">Posts</a>
+        <a class="item" data-tab="second">Saved</a>
+    </div>
+    <div class="ui bottom attached active tab segment" data-tab="first">
+        <div class="ui three stackable cards">
+          {% for card in Cards %}
+            <div class="ui centered {{ card.card_color_css }} card">
+                <div class="content">
+                    <div class="right floated meta">{{ card.time }}</div>
+                    <i class="right floated bookmark outline icon"></i>
+                    <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/large/matthew.png"> {{card.name}}
+                </div>
+                <div class="ui fluid image">
+                    <img src={{ card.image_url }}>
+                </div>
+                <!-- <div class="extra">
+                  Rating:
+                  <div class="ui star rating" data-rating="3"></div>
+                </div> -->
+                <div class="content">
+          <span class="right floated">
+            <i class="heart outline like icon"></i>
+            {{ card.likes }} likes
+          </span>
+                    <i class="comment icon"></i>
+                    {{ card.comments }} comments
+                </div>
+                <div class="extra content">
+                    <div class="ui large transparent left icon input">
+                        <i class="heart outline icon"></i>
+                        <input type="text" placeholder="Add Comment...">
+                    </div>
+                </div>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="second">
+        <div class="ui three stackable cards">
+            <div class="ui centered green card">
+                <div class="content">
+                    <div class="right floated meta">1d</div>
+                   <i class="right floated bookmark outline icon"></i>
+                    <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/large/matthew.png"> Shankha
+                </div>
+                <div class="ui fluid image">
+                    <img src='https://cdn.hipwallpaper.com/i/76/62/IrKeEJ.jpg'>
+                </div>
+                <div class="content">
+          <span class="right floated">
+            <i class="heart outline like icon"></i>
+            25 likes
+          </span>
+                    <i class="comment icon"></i>
+                    7 comments
+                </div>
+                <div class="extra content">
+                    <div class="ui large transparent left icon input">
+                        <i class="heart outline icon"></i>
+                        <input type="text" placeholder="Add Comment...">
+                    </div>
+                </div>
+            </div>
+            <div class="ui centered red card">
+                <div class="content">
+                    <div class="right floated meta">3d</div>
+                    <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/large/matthew.png"> Shankha
+                </div>
+                <div class="ui fluid image">
+                    <img src="https://images.hdbackgroundpictures.com/pictureHD51b957025272c87358.jpg">
+                </div>
+                <div class="content">
+          <span class="right floated">
+            <i class="heart outline like icon"></i>
+            28 likes
+          </span>
+                    <i class="comment icon"></i>
+                    10 comments
+                </div>
+                <div class="extra content">
+                    <div class="ui large transparent left icon input">
+                        <i class="heart outline icon"></i>
+                        <input type="text" placeholder="Add Comment...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script type="text/javascript" src="{% static 'profile_page/profileScript.js' %}"></script>
+</body>
+</html>

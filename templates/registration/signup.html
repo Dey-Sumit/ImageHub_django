@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href=" {% static 'registration/css/style.css' %} ">
+
+</head>
+<body>
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <div class="ui message">
+            New to us?&nbsp;&nbsp;
+            <button class="ui mini teal button" onclick="openSignUp()">Sign Up</button>
+        </div>
+    </div>
+</div>
+<div class="ui tiny modal" id="signup-modal">
+    <div class="header">
+        <div class="ui center aligned container">Register Here
+        </div>
+    </div>
+    <div class="content">
+        <!-- Loading Animation -->
+        <div class="ui inverted dimmer">
+            <div class="ui text loader">Signing Up...</div>
+        </div>
+        <form class="ui form" method="post" action="{% url 'signup' %}">
+            {% csrf_token %}
+            {% for field in form %}
+            <p>
+                {{ field.label_tag }}<br>
+                {{ field }}
+                {% if field.help_text %}
+                <small style="color: grey">{{ field.help_text }}</small>
+                {% endif %}
+                {% for error in field.errors %}
+            <p style="color: red">{{ error }}</p>
+            {% endfor %}
+            </p>
+            {% endfor %}
+            <button class="ui basic blue submit button fluid">Submit</button>
+            <div class="ui error message"></div>
+        </form>
+        <!-- ./SignIn With Email & Password Form -->
+        <div class="ui horizontal divider">Social Signup</div>
+        <!-- Social Login Button -->
+        <div class="ui two column center aligned grid">
+            <div class="row">
+                <div class="column">
+                    <button class="ui facebook button">
+                        <i class="facebook icon"></i>
+                        Facebook
+                    </button>
+                </div>
+                <div class="column">
+                    <button class="ui google plus button">
+                        <i class="google icon"></i>
+                        Google
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- ./Social Login Button -->
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script type="text/javascript" src=" {% static 'registration/js/LoginSignupScript.js' %}"></script>
+</body>
+</html>

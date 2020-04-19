@@ -1,0 +1,14 @@
+body {
+        background-image: url('https://ak8.picdn.net/shutterstock/videos/1032769898/thumb/1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+body > .grid {
+        height: 100%;
+      }
+.image {
+        margin-top: -100px;
+      }
+.column {
+        max-width: 450px;
+      }

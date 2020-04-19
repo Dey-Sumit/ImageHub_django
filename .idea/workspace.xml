@@ -2,19 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69099636-70ee-4ff1-9d79-4c076918629b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ImgHub/hash_value.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImgHub/migrations/0004_auto_20200323_1317.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImgHub/migrations/0005_auto_20200323_1323.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/Honeycrisp-Apple_0K5fff0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/Honeycrisp-Apple_f8ESUz0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/IMG20190622143902_8VgYKhr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ImgHub/css/result.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/profile_page/profileScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/profile_page/profileStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/registration/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/registration/js/LoginSignupScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ImgHub/profilePage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/Login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImgHub/classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImgHub/exif_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/exif_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageHub/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageHub/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageHub/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageHub/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0002_auto_20200307_1214.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0003_auto_20200307_2030.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0004_auto_20200323_1317.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0005_auto_20200323_1323.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgHub/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/86260965_2897354546967752_4648760854731292672_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/Honeycrisp-Apple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/Honeycrisp-Apple_0K5fff0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/Honeycrisp-Apple_f8ESUz0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190608180210.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190608180210_Oy4c23j.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190608180210_idoFJT3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190620181051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190620181051_5aJtdPH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190620181051_fmIy2UM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143420.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143420_0G4Y2Ko.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143420_AP5S106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143902.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143902_8VgYKhr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG20190705175911.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_021931.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_021931_847uEV4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_021931_lfkxPXF.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_023524.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_023524_sQU4cfM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_024227.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_025109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/Ronaldo_RealMadrid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/Ronaldo_RealMadrid_Pa2fBJK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/apple.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/apple.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/apple_MMdvPDV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/apple_aFmcGp2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/apple_lwpQLjz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/tiger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/tiger_5vR0DDT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/tiger_drM6c6n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/tiger_o1SUEXd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ImgHub/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ImgHub/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ImgHub/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ImgHub/result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +68,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -33,21 +77,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yj9L0nR2KYDPZCo9nSlnjrsit4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ImageHub" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sumax\Desktop\ImageHub\ImageHub\ImageHub" />
+      <recent name="C:\Users\Sumax\Desktop\ImageHub\ImageHub\static\registration\js" />
+      <recent name="C:\Users\Sumax\Desktop\ImageHub\ImageHub\templates\registration" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sumax\Desktop\ImageHub\ImageHub\static" />
       <recent name="C:\Users\Sumax\Desktop\ImageHub\ImageHub\ImgHub" />
       <recent name="C:\Users\Sumax\Desktop\ImageHub\ImageHub" />
     </key>
@@ -66,10 +119,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="526" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583446828267">
+    <state x="526" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587252071245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="526" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583446828267" />
+    <state x="526" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1587252071245" />
+    <state x="553" y="134" key="RollbackChangesDialog" timestamp="1585852349863">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="553" y="134" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585852349863" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1584983754464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -78,17 +135,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584952029321" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584975925764">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587236804191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584975925764" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587236804191" />
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1584339484552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1584339484552" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584983770465">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586532716044">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584983770465" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586532716044" />
   </component>
 </project>

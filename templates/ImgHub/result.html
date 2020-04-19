@@ -1,5 +1,10 @@
 {% extends 'ImgHub/base.html' %}
 {% block content %}
+
+    <div id="IMAGE" class="image_area">
+              <img src="{{ context.image.url }}" alt="" class="img-fluid">
+    </div>
+
     <h1>Prediction</h1>
     <h3>{{ context.prediction }}</h3>
 
