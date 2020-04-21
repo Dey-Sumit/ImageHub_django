@@ -1,0 +1,9 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.ui.cards>.card>.image>img {
+  width: auto;
+  height: 200px;
+}

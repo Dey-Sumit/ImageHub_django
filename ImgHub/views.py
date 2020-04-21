@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse,HttpResponseRedirect
 from .forms import ImageForm,SignUpForm
-from .models import ImageDB
+from .models import ImageDB,Profile
 # from tensorflow.keras import applications
 from . import classification
 from .import exif_data
@@ -10,7 +10,7 @@ from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
-
+from .forms import ProfileForm
 # to get the custom user manager
 from django.contrib.auth import get_user_model
 User = get_user_model()
@@ -86,11 +86,16 @@ def profile(request):
 
     cards = [card1, card2, card3, card4, card5]
 
-    log_user=request.user
+    log_user = request.user
     print("logged user ",log_user)
     images = ImageDB.objects.filter(user=log_user)
+    profile_obj = Profile.objects.get(user=log_user)
+    info = {'posts': profile_obj.posts,
+          'followers': profile_obj.followers,
+          'following': profile_obj.following,
+          'points': profile_obj.points}
 
-    return render(request, 'ImgHub/profilePage.html', {'Cards': cards, 'Images': images})
+    return render(request, 'ImgHub/profilePage.html', {'Cards': cards, 'Images': images,'info': info})
 
 
 # # load and saved the model ;one time uses
@@ -160,8 +165,12 @@ def signup_view(request):
 
     if request.method == 'POST':
         form = SignUpForm(request.POST)
-        if form.is_valid():
-            form.save()
+        profile_form = ProfileForm(request.POST)
+        if form.is_valid() and profile_form.is_valid():
+            user = form.save()
+            profile = profile_form.save(commit=False)
+            profile.user = user
+            profile.save()
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
@@ -170,9 +179,15 @@ def signup_view(request):
     else:
         print("signup triggered")
         form = SignUpForm()
-    return render(request, 'registration/signup.html', {'form': form})
+        profile_form = ProfileForm()
+    return render(request, 'registration/signup.html', {'form': form, 'profile_form': profile_form})
+
 
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect('/account/login/')
 
+
+@login_required(login_url='/account/login/')
+def suggestions(request):
+    return render(request, 'ImgHub/SuggestionPage.html')

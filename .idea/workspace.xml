@@ -2,63 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69099636-70ee-4ff1-9d79-4c076918629b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/ImgHub/css/result.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/profile_page/profileScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/profile_page/profileStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/registration/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/registration/js/LoginSignupScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ImgHub/profilePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/Login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageHub/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageHub/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageHub/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageHub/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0002_auto_20200307_1214.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0003_auto_20200307_2030.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0004_auto_20200323_1317.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImgHub/migrations/0005_auto_20200323_1323.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImgHub/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgHub/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgHub/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/86260965_2897354546967752_4648760854731292672_o.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/Honeycrisp-Apple.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/Honeycrisp-Apple_0K5fff0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/Honeycrisp-Apple_f8ESUz0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190608180210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190608180210_Oy4c23j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190608180210_idoFJT3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190620181051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190620181051_5aJtdPH.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190620181051_fmIy2UM.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143420.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143420_0G4Y2Ko.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143420_AP5S106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143902.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190622143902_8VgYKhr.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG20190705175911.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_021931.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_021931_847uEV4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_021931_lfkxPXF.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_023524.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_023524_sQU4cfM.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_024227.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG_20191010_025109.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/Ronaldo_RealMadrid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/Ronaldo_RealMadrid_Pa2fBJK.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/apple.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/apple.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/apple_MMdvPDV.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/apple_aFmcGp2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/apple_lwpQLjz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/tiger.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/tiger_5vR0DDT.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/tiger_drM6c6n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/tiger_o1SUEXd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ImgHub/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ImgHub/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ImgHub/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ImgHub/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ImgHub/profilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ImgHub/profilePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,14 +83,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584983754464" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1587473145629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1587473145629" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1584952029321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584952029321" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587236804191">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587472193636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587236804191" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587472193636" />
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1584339484552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

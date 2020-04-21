@@ -2,17 +2,31 @@ from django.contrib import admin
 from .models import ImageDB
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from .models import Account
+from .models import Profile
 
 
 class ImageDBAdmin(admin.ModelAdmin):
-    list_display = ('name', 'user', 'u_ctg', 'v_ctg','published_on')
-    list_filter = ('u_ctg','v_ctg')
+    list_display = ('name', 'user', 'u_ctg', 'v_ctg', 'published_on')
+    list_filter = ('u_ctg', 'v_ctg')
     search_fields = ('name', 'u_ctg')
     ordering = ('published_on',)
     filter_horizontal = ()
 
-admin.site.register(ImageDB,ImageDBAdmin)
+
+admin.site.register(ImageDB, ImageDBAdmin)
 # admin.site.register(SignUpModel)
+
+
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'posts', 'points', 'followers', 'following')
+    list_filter = ['user']
+    search_fields = ['user']
+    ordering = ('points',)
+    filter_horizontal = ()
+
+
+admin.site.register(Profile,ProfileAdmin)
+
 
 class UserAdmin(BaseUserAdmin):
     # The forms to add and change user instances
@@ -22,10 +36,10 @@ class UserAdmin(BaseUserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ('email', 'username','date_joined','last_login','is_staff','is_admin')
+    list_display = ('username', 'email', 'date_joined', 'last_login', 'is_staff', 'is_admin')
     list_filter = ('is_admin',)
     fieldsets = ()
-    search_fields = ('email','username')
+    search_fields = ('email', 'username')
     ordering = ('username',)
     filter_horizontal = ()
 

@@ -13,6 +13,15 @@
         <div class="ui segment fluid">
             <div class="ui equal width center aligned">
                 <div class="row" style="background-color: #FBFFFE;color: #FFFFF">
+                    <div class="ui inverted menu">
+      <a class="item" href="{% url 'suggestions' %}">
+        <img src="https://cdn2.f-cdn.com/contestentries/1492740/33695817/5cc13e9477f89_thumb900.jpg" alt="ImageHub">
+      </a>
+      <a class="active item">
+        Explore
+      </a>
+
+    </div>
                     <div class="column">
                         <div class="ui column grid stackable">
                             <div class="four wide computer sixteen wide tablet sixteen wide mobile column">
@@ -28,15 +37,18 @@
                                 {{ 'please login' }}
                                 {% endif %}</p>
                                 <br>
-                                <button class="ui blue button">
-                                    <i class="edit icon"></i>
-                                    Edit Profile
-                                </button>
+
                                 <a href="{% url 'logout' %}">
-                                <button class="ui teal button">
-                                    LOG OUT
+                                <button class="ui blue button">
+
+                                    New Image
                                 </button>
                                 </a>
+
+                                <button class="ui teal button">
+                                    <i class="edit icon"></i>Edit Profile
+                                </button>
+
                                 <div id="drop" class="ui icon left pointing dropdown button">
                                     <i class="wrench icon"></i>
                                     <div class="menu">
@@ -44,7 +56,8 @@
                                         <div class="item">Change Password</div>
                                         <div class="ui divider"></div>
                                         <div class="item">Settings</div>
-                                        <div class="item">Log Out</div>
+                                        <div class="item"> <a href="{% url 'logout' %}">
+                                    Log out</a></div>
                                         <div class="ui divider"></div>
                                         <div class="item">Help</div>
                                     </div>
@@ -56,19 +69,19 @@
 
                                     <tr>
                                         <td class="center aligned" data-label="Name"><h3>Posts</h3></td>
-                                        <td class="center aligned" data-label="Age"><h4>52</h4></td>
+                                        <td class="center aligned" data-label="Age"><h4>{{ info.posts }}</h4></td>
                                     </tr>
                                     <tr>
                                         <td class="center aligned" data-label="Name"><h3>Followers</h3></td>
-                                        <td class="center aligned" data-label="Age"><h4>126</h4></td>
+                                        <td class="center aligned" data-label="Age"><h4>{{ info.followers }}</h4></td>
                                     </tr>
                                     <tr>
                                         <td class="center aligned" data-label="Name"><h3>Following</h3></td>
-                                        <td class="center aligned" data-label="Age"><h4>512</h4></td>
+                                        <td class="center aligned" data-label="Age"><h4>{{ info.following }}</h4></td>
                                     </tr>
                                     <tr>
                                         <td class="center aligned" data-label="Name"><h3>Points</h3></td>
-                                        <td class="center aligned" data-label="Age"><h4>35.69</h4></td>
+                                        <td class="center aligned" data-label="Age"><h4>{{ info.points }}</h4></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -106,7 +119,8 @@
                 <div class="content">
                     <div class="right floated meta">{{ card.time }}</div>
                     <i class="right floated bookmark outline icon"></i>
-                    <img class="ui avatar image" src="https://semantic-ui.com/images/avatar2/large/matthew.png"> {{card.name}}
+                    <img class="ui avatar image"
+                         src="https://semantic-ui.com/images/avatar2/large/matthew.png"> {{ user.username }}
                 </div>
                 <div class="ui fluid image">
                     <img src={{ card.image_url }}>

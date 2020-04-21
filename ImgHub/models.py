@@ -6,17 +6,21 @@ from django.contrib.auth.models import User
 from django.contrib.auth import get_user_model
 
 from django.conf import settings
+from django.contrib.auth import get_user_model
+
 
 class ImageDB(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE,null='Admin')
     u_ctg_options = [('unknown', 'unknown'), ('Animal', 'Animal'), ('Fruit', 'Fruit'), ('Nature', 'Nature'), ('Art', 'Art')]
     name = models.CharField(max_length=500)
     image_file = models.ImageField(upload_to='images/')
+    caption = models.TextField(max_length=40,null=True)
     u_ctg = models.CharField(max_length=10, default='unknown', choices=u_ctg_options)
     v_ctg = models.CharField(max_length=10, default="unknown")
     hash_val = models.CharField(max_length=100, null=True)
     published_on=models.DateTimeField(default=timezone.now())
     # hash_val max length <=36
+    saved = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name + " : " + str(self.image_file)
@@ -86,7 +90,19 @@ class Account(AbstractBaseUser, PermissionsMixin):
         return True
 
 
-class Profile():
-    pass
+# this is one to one field with account aka custom user
+User = get_user_model()
 
+
+class Profile(models.Model):
+    user =       models.OneToOneField(User, on_delete=models.CASCADE)
+    first_name = models.CharField(max_length=20)
+    last_name =  models.CharField(max_length=20)
+    posts     =  models.IntegerField(default=0)
+    followers =  models.IntegerField(default=0)
+    following =  models.IntegerField(default=0)
+    points =     models.FloatField(default=0.0)
+
+    def __str__(self):
+        return str(self.user) + " : " + self.first_name + " " + self.last_name
 

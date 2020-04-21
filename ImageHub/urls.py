@@ -22,6 +22,7 @@ from ImgHub import views as core_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ImgHub.urls')),
+    path('suggestions/', core_views.suggestions,name='suggestions'),
     path('account/login/', core_views.login_view, name='login'),
     path('account/signup/', core_views.signup_view, name='signup'),
     path('account/logout/', core_views.logout_view, name='logout'),

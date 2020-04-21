@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Suggestions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'suggestions/css/SuggestionStyle.css' %}">
+  </head>
+  <body>
+    <div class="ui inverted menu">
+      <a class="item">
+        <img src="https://cdn2.f-cdn.com/contestentries/1492740/33695817/5cc13e9477f89_thumb900.jpg" alt="ImageHub">
+      </a>
+      <a class="item">
+        Home
+      </a>
+      <a class="active item">
+        Explore
+      </a>
+      <a class="item">
+        Vote
+      </a>
+      <a class="item">
+        Community
+      </a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+        <a class="ui item" href="{%  url 'profile' %} ">
+          Profile
+        </a>
+      </div>
+    </div>
+    <div class="ui center aligned segment fluid">
+      <div class="row">
+        <h2 class="ui block header">Discover People</h2>
+        <div class="ui six stackable small images">
+          <a class="ui image" href="#"><img src="{% static 'suggestions/images/elliot.jpg' %}"></a>
+          <a class="ui image" href="#"><img src="{% static 'suggestions/images/elyse.png' %}"></a>
+          <a class="ui image" href="#"><img src="{% static 'suggestions/images/kristy.png' %}"></a>
+          <a class="ui image" href="#"><img src="{% static 'suggestions/images/molly.png' %}"></a>
+          <a class="ui image" href="#"><img src="{% static 'suggestions/images/elyse.png' %}"></a>
+          <a class="ui image" href="#"><img src="{% static 'suggestions/images/matthew.png' %}"></a>
+        </div>
+      </div>
+    </div>
+    <div class="ui center aligned segment fluid">
+      <div class="row">
+        <h2 class="ui block header">Explore Contests</h2>
+          <div class="ui four stackable cards">
+            <div class="card">
+                <img class="ui image" src="{% static 'suggestions/images/flower-purple-lical-blosso.jpg' %}">
+              <div class="content">
+                <a class="header">Flower</a>
+                <div class="meta">
+                  <span class="date">On Sep 2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <img class="ui image" src="{% static 'suggestions/images/macro_cover.jpg' %}">
+              <div class="content">
+                <a class="header">Macro</a>
+                <div class="meta">
+                  <span class="date">On Oct 2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <img class="ui large image" src="{% static 'suggestions/images/photo-1545161296-d9c2c241f2ad.jpg' %}">
+              <div class="content">
+                <a class="header">Nature</a>
+                <div class="meta">
+                  <span class="date">On Dec 2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <img class="ui image" src="{% static 'suggestions/images/turkey-3048299_1920.jpg' %}">
+              <div class="content">
+                <a class="header">Clouds</a>
+                <div class="meta">
+                  <span class="date">On Feb 2022</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="ui center aligned segment">
+      <h2 class="ui block header">Explore Recent Posts</h2>
+      <div class="ui three stackable cards">
+        <div class="ui red card">
+          <div class="content">
+            <img class="ui avatar image" src="{% static 'suggestions/images/matthew.png' %}">Shankha
+            <button type="button" class="ui tiny blue right floated button">Go to Profile</button>
+          </div>
+          <div class="ui centered image">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+          </div>
+        </div>
+        <div class="ui red card">
+          <div class="content">
+            <img class="ui avatar image" src="{% static 'suggestions/images/elyse.png' %}">Sayantan
+            <button type="button" class="ui tiny blue right floated button">Go to Profile</button>
+          </div>
+          <div class="ui centered image">
+            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+          </div>
+        </div>
+        <div class="ui red card">
+          <div class="content">
+            <img class="ui avatar image" src="{% static 'suggestions/images/elliot.jpg' %}">Sumit
+            <button type="button" class="ui tiny blue right floated button">Go to Profile</button>
+          </div>
+          <div class="ui centered image">
+            <img src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg">
+          </div>
+        </div>
+        <div class="ui red card">
+          <div class="content">
+            <img class="ui avatar image" src="{% static 'suggestions/images/kristy.png' %}">Rounak
+            <button type="button" class="ui tiny blue right floated button">Go to Profile</button>
+          </div>
+          <div class="ui centered image">
+            <img src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg">
+          </div>
+        </div>
+        <div class="ui red card">
+          <div class="content">
+            <img class="ui avatar image" src="{% static 'suggestions/images/molly.png' %}">Rishav
+            <button type="button" class="ui tiny blue right floated button">Go to Profile</button>
+          </div>
+          <div class="ui centered image">
+            <img src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg">
+          </div>
+        </div>
+        <div class="ui red card">
+          <div class="content">
+            <img class="ui avatar image" src="{% static 'suggestions/images/matthew.png' %}">Shankha
+            <button type="button" class="ui tiny blue right floated button">Go to Profile</button>
+          </div>
+          <div class="ui centered image">
+            <img src="https://images.unsplash.com/photo-1541233349642-6e425fe6190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+          </div>
+        </div>
+        <div class="ui red card">
+          <div class="content">
+            <img class="ui avatar image" src="{% static 'suggestions/images/elyse.png' %}">Sayantan
+            <button type="button" class="ui tiny blue right floated button">Go to Profile</button>
+          </div>
+          <div class="ui centered image">
+            <img src="https://1.bp.blogspot.com/-MdaQwrpT4Gs/Xdt-ff_hxEI/AAAAAAAAQXE/oOgnysGd9LwoFLMHJ0etngKzXxmQkWc5ACLcBGAsYHQ/s400/Beautiful-Backgrounds%2B%2528122%2529.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script type="text/javascript" src="{% static 'suggestions/js/SuggestionScript.js' %} "></script>
+  </body>
+</html>
